@@ -5,7 +5,6 @@ echo CPU Load: `top -bn1 | grep load | awk '{print $10 " " $11 " " $12}'`
 echo CPUs: `top -b -n1 | grep "Cpu" | awk '{print $2 " " $3 " " $8 " " $9}'`
 echo "ngrok"
 
-
 #top -bn1 | grep load | awk '{printf "CPU Load: %.2f\n", $(NF-2)}'
 # free -m | awk 'NR==2{printf "%.2f%%\t\t", $3*100/$2 }'
 # df -h | awk '$NF=="/"{printf "%s\t\t", $5}'
